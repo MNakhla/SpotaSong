@@ -1,0 +1,87 @@
+.native-class{
+  background: #f8d933;
+  color: #820404;
+}
+.ion-class {
+  --background: red;
+}
+.custom-div {
+  border: 1px solid black;
+  border-radius: 35px;
+  width: 20px;
+}
+
+.bg-image {
+  --background: none;
+  background-image: url("../../../assets/img/move.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ion-content {
+  --ion-background-color: #eee;
+  
+}
+.container-of-all-cards{
+    // border: 1px solid red;
+    padding: 20px;
+    padding-top: 0px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    overflow: auto;
+    justify-content: center;
+}
+.container-of-each-card{
+    border: 1px solid black;
+    display: inline-flex;
+    width: 50%;
+    height: 168px;
+    // margin: 11px;
+    background: linear-gradient(45deg, #0cc2e8, transparent);
+}
+.col {
+  size: 8;
+}
+
+.ion-card {
+  display: flex;
+  flex-direction: column;
+  width: 50% !important;
+  margin: 0 !important;
+}
+
+.genre-header{
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+button {
+  border: 0;
+  border-radius: 0;
+  line-height: 1;
+  width: 93.7px;
+  color: #820404;
+  background: linear-gradient(45deg, #f7d20f, transparent);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.symbols{
+  font-size: 27px
+}

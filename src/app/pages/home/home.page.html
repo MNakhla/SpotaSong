@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="native-class">
+      Music Genres
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-image" >
+  <div class="container-of-all-cards" >
+
+<app-genres-view  class="container-of-each-card"  *ngFor="let genre of GenreArr" 
+  [parentData]="genre"  >
+</app-genres-view>
+
+  </div>
+
+</ion-content>
+  <ion-footer>
+  <div>
+    <button><ion-icon class="symbols" name="list"></ion-icon>
+      AllPlaylists
+    </button>
+    <button (click)="favorites()"><ion-icon class="symbols" name="heart"></ion-icon>
+      Favorites
+    </button>
+    <button (click)="getCurrentPlaylist()"><ion-icon class="symbols" name="musical-notes"></ion-icon>
+      CurrentPlaylist
+    </button>
+    <button (click)="getSongUrl()"><ion-icon class="symbols" name="play"></ion-icon>
+      NowPlaying
+    </button>
+
+  </div>
+  </ion-footer>
+

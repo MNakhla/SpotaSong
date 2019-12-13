@@ -1,0 +1,31 @@
+.each-song{
+    // border: 1px solid blue;
+    // display: -webkit-inline-box;
+    display: inline-flex;
+    flex-direction: row;
+    color: #820404;
+    width: 100%;
+    height: 86px;
+    margin: 11px;
+    background: linear-gradient(45deg, #f7ee03, transparent);
+    position: relative;
+
+}
+
+.heartYellow{
+    color: #f7ca13;
+    --slot: end;
+    position: absolute;
+    top: 54px;
+    right: 0px;
+    font-size: 33px;
+}
+
+.heartRed{
+    color: #820404;
+    --slot: end;
+    position: absolute;
+    top: 54px;
+    right: 0px;
+    font-size: 33px;
+}

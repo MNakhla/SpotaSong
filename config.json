@@ -1,0 +1,4 @@
+{
+    "spotifyToken": "Bearer BQBveTcXfR0B6JpwHYm8Ai1ssGeQ3WtAAjRKdDkhhcpIL22RAiD-8oHwTsI6HrMg-FMgTs7A-ld5nHZjcMziZquPRlJZi-lZKLfZXLhszPIjfFnri7qE_HBY6LvE7bW1pwpYlc0JyFQsEOi-o7DAb5OSq6hCmva9B-hlRJOr_FoIH0UB8_ntf0HVYONpT_CNRZ-PCpUv3bOgAjIt6ZdOa2wb-ramfsLwsfV-f1q68M7O1-XOO-377nO3ZSBCdmMjnv70rW2UM2whKa1zGs285cNJzLvl_w",
+    "dbURL": "https://spotahome-51144.firebaseio.com/Favorites.json"
+}

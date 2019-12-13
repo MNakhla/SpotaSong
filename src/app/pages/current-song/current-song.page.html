@@ -1,0 +1,31 @@
+<ion-content>
+  <div>
+  <div class = "container">
+  <img class = "img" [src] = "image" />
+<div class = "text">
+  {{name}} <br>
+  By: {{artist}}
+</div>
+
+<div class="slidecontainer">
+  <input id ="seekbar" type="range" min="0" max=30 step="any" [(ngModel)]= "audio.currentTime"  class="slider" >
+
+  <!-- <audio id="myAudio" controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio> -->
+</div>
+  <div class = "controllers">
+      <ion-icon name="arrow-dropleft-circle" (click)="back()"></ion-icon>
+      <ion-icon *ngIf="!playButton" name="pause" (click)="pause()"></ion-icon>
+      <ion-icon *ngIf="playButton" name="play-circle" (click)="play()"></ion-icon>
+      <ion-icon name="arrow-dropright-circle" (click)="next()"></ion-icon>
+      <ion-icon name="heart" (click)="toggleColor()" [ngClass]="getHeart()? 'heartRed' : 'heartYellow'"></ion-icon>
+  </div>
+ 
+</div>
+</div>
+</ion-content>
+
+<app-nav-bar></app-nav-bar>

@@ -1,0 +1,39 @@
+<ion-header class = "ion-header">
+  <img class = playlistImg src="../../../assets/img/lovesongs.jpg">
+</ion-header>
+
+<ion-content>
+<div class="all-songs">
+<div *ngFor="let track of myTracks" class="all-songs-container">
+  <div
+  class="each-song"
+  *ngIf="track['preview_url']!= null"
+  (click)="playAudio(track.preview_url,track.album.images[0].url, track.name, track.artists[0].name, track.id)"
+>
+  <img [src]="track.album.images[0].url" width="86px" height="86px" />
+  {{ track.name }} <br>
+  {{ "By: " + track.artists[0].name }}
+  <ion-icon name="heart" class = "heartRed"></ion-icon>
+</div>
+</div>
+</div>
+<!-- <app-nav-bar></app-nav-bar> -->
+</ion-content>
+
+<ion-footer>
+<div>
+<button (click)="home()"><ion-icon class="symbols" name="list"></ion-icon>
+  AllPlaylists
+</button>
+<button><ion-icon class="symbols" name="heart"></ion-icon>
+  Favorites
+</button>
+<button (click)="getCurrentPlaylist()"><ion-icon class="symbols" name="musical-notes"></ion-icon>
+  CurrentPlaylist
+</button>
+<button  (click)="getSongUrl()"><ion-icon class="symbols" name="play"></ion-icon>
+  NowPlaying
+</button>
+
+</div>
+</ion-footer>

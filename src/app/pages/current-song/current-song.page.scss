@@ -1,0 +1,70 @@
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 40px;
+    // padding-top: 100px;
+    align-items: center;
+    justify-items: center;
+    background: #f9763a;
+    height: -webkit-fill-available;
+
+}
+.controllers{
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 64px;
+    margin-top: 40px;
+    color: #f8dc45;
+}
+
+.text{
+    font-family: sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+    width: 68%;
+    color: #820404;
+}
+
+.black{
+    background: black;
+}
+
+
+
+
+.slidecontainer {
+    width: 88%;
+    margin-top: 25px;
+  }
+  
+  /* The slider itself */
+  .slider {
+    margin-top: 35px;
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 3px; /* Specified height */
+    background: #f9dd46;
+  }
+  
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #820404; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .heartYellow{
+    color: #f8dc44;
+}
+.heartRed{
+  color: #820404;
+}
+
+.img {
+  border-radius: 50%;
+   width: 295px;
+}
+  

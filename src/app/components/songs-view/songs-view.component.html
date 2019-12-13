@@ -1,0 +1,10 @@
+<div
+  class="each-song"
+  *ngIf="parentData2.preview_url != null"
+  (click)="playAudio(parentData2.preview_url,parentData2.album.images[0].url, parentData2.name, parentData2.artists[0].name, parentData2.id)"
+>
+  <img [src]="parentData2.album.images[0].url" width="86px" height="86px" />
+  {{ parentData2.name }} <br>
+  {{ "By: " + parentData2.artists[0].name }}
+  <ion-icon name="heart" class = "heart" [ngClass]="toggleHeart()? 'heartRed' : 'heartYellow'"></ion-icon>
+</div>
